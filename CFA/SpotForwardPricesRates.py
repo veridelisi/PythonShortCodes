@@ -15,4 +15,4 @@ r_3= ((( (1+ r_1)    * (1+ f_1_1) * (1+ f_2_1)  )** (1/3))-1)*100
 print(r_2)
 print(r_3)
 
-![Screenshot](CFA/Graph/SpotRatesForwardRates.JPG)
+
