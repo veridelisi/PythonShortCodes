@@ -1,12 +1,12 @@
 #https://analystprep.com/study-notes/cfa-level-2/describe-how-zero-coupon-rates-spot-rates-may-be-obtained-from-the-par-curve-by-bootstrapping/
-'''
+"""
 Annual Par-Rates
 Year  Par Rate  Zero-coupon rate (Implied Spot rate)
 1     2.00      2.00
 2     2.60      2.61
 3     2.90      2.91
 4     3.80      3.87
-'''
+"""
 
 
 # r(2) 
