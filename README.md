@@ -14,15 +14,15 @@ Description: This file contains a forward pricing model.
 
 ### [Par_Spot_Yield_Curve_Bootstrapper_0.py](CFA/Par_Spot_Yield_Curve_Bootstrapper_0.py)
 
-Description: This file, originally named `Par_Spot_Yield_Curve_Bootstrapper_0.py`, was renamed recently.
+Description: This file is part 0 of a series implementing a Par-Spot yield curve bootstrapper.
 
 ### [Par_Spot_Yield_Curve_Bootstrapper_1.py](CFA/Par_Spot_Yield_Curve_Bootstrapper_1.py)
 
-Description: This file, originally named `Par_Spot_Yield_Curve_Bootstrapper.py`, was renamed recently.
+Description: This file is part 1 of a series implementing a Par-Spot yield curve bootstrapper.
 
 ### [Par_Spot_Yield_Curve_Bootstrapper_2.py](CFA/Par_Spot_Yield_Curve_Bootstrapper_2.py)
 
-Description: This file is part of a series implementing a Par-Spot yield curve bootstrapper.
+Description: This file is part 2 of a series implementing a Par-Spot yield curve bootstrapper.
 
 ### [Par_Spot_Yield_Curve_Bootstrapper_4.py](CFA/Par_Spot_Yield_Curve_Bootstrapper_4.py)
 
