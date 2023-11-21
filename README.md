@@ -4,6 +4,10 @@ This repository contains Python scripts related to financial modeling and analys
 
 ## Files
 
+### [FX_Basis_Swap_Spread.py](CFA/FX_Basis_Swap_Spread.py)
+
+Description: This file calculates FX Basis Swap Python Code
+
 ### [Forward_Rate_Model.py](CFA/Forward_Rate_Model.py)
 
 Description: This file implements a forward rate model.
