@@ -21,7 +21,7 @@ result_table = pd.DataFrame(index=range(1, 6))
 result_table.index.name = 'Year'
 result_table['Spot Rate'] = [spot_rates[i] for i in range(1, 6)]
 result_table['Discount Factor'] = discount_factors
-result_table['Forward Rate'] = [0] + forward_rates  # First year forward rate is assumed to be 0
+result_table['Forward Rate'] = [spot_rates[1]*100] + forward_rates  # First year forward rate is assumed to be 0
 
 # Display the results
 print(result_table)
