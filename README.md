@@ -40,7 +40,8 @@ Description: This file implements functionality related to riding the yield curv
 
 Description: This file was recently updated. It likely contains functionality for calculating spot and forward prices and rates.
 
-![Alt text](relative%20https://github.com/veridelisi/PythonShortCodes/new/main/CFA/Graph/sofrzerocurve.jpg?raw=true "Title")
+![Alt text](https://github.com/veridelisi/PythonShortCodes/raw/main/CFA/Graph/sofrzerocurve.jpg "Title")
+
 
 
 ### [Readme.txt](CFA/Readme.txt)
