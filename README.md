@@ -40,8 +40,9 @@ Description: This file implements functionality related to riding the yield curv
 
 Description: This file was recently updated. It likely contains functionality for calculating spot and forward prices and rates.
 
-![Alt text](https://github.com/veridelisi/PythonShortCodes/raw/main/CFA/Graph/sofrzerocurve.jpg "Title")
+### [SOFR_Zero_Rate_Calculate.py](CFA/SOFR_Zero_Rate_Calculate.py)
 
+Description: This file was recently updated. It likely contains functionality for calculating SOFR zero rate curve.
 
 
 ### [Readme.txt](CFA/Readme.txt)
