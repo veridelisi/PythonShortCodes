@@ -1,5 +1,7 @@
 #https://github.com/veridelisi/PythonShortCodes/new/main/CFA/Graph/sofrzerocurve.jpg
 
+![alt text](https://github.com/[veridelisi/[PythonShortCodes/CFA]/blob/[Graph]/sofrzerocurve.jpg?raw=true)
+
 import datetime
 import numpy as np
 
