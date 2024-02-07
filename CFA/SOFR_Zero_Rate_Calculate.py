@@ -1,7 +1,7 @@
 #https://github.com/veridelisi/PythonShortCodes/new/main/CFA/Graph/sofrzerocurve.jpg
 
-![alt text](https://github.com/[veridelisi/[PythonShortCodes/CFA]/blob/[Graph]/sofrzerocurve.jpg?raw=true)
 
+![Alt text](relative%20https://github.com/veridelisi/PythonShortCodes/new/main/CFA/Graph/sofrzerocurve.jpg?raw=true "Title")
 import datetime
 import numpy as np
 
