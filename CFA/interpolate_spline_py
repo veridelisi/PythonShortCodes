@@ -1,0 +1,45 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.interpolate import CubicSpline
+
+# Given data points: Maturities and corresponding zero rates
+maturities = np.array([0.5, 1.0, 2.0, 3.0, 5.0, 7.0, 10.0])
+zero_rates = np.array([1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0])
+
+# Fit a cubic spline
+cs = CubicSpline(maturities, zero_rates)
+
+# Generate maturities for plotting
+maturities_plot = np.linspace(min(maturities), max(maturities), 100)
+zero_curve = cs(maturities_plot)
+
+# Plot the zero curve
+plt.figure(figsize=(10, 6))
+plt.plot(maturities_plot, zero_curve, label='Fitted Zero Curve', color='blue')
+plt.scatter(maturities, zero_rates, color='red', zorder=5, label='Given Data Points')
+plt.title('Zero Curve Fitted with Cubic Spline')
+plt.xlabel('Maturity (Years)')
+plt.ylabel('Zero Rate (%)')
+plt.legend()
+plt.grid(True)
+plt.show()
+
+from scipy.interpolate import interp1d
+
+# Linear interpolation
+linear_interp = interp1d(maturities, zero_rates, kind='linear')
+
+# Generate zero curves for both cubic spline and linear interpolation
+zero_curve_linear = linear_interp(maturities_plot)
+
+# Plot the zero curve with both interpolation methods
+plt.figure(figsize=(10, 6))
+plt.plot(maturities_plot, zero_curve, label='Cubic Spline Interpolation', color='blue')
+plt.plot(maturities_plot, zero_curve_linear, label='Linear Interpolation', color='green', linestyle='--')
+plt.scatter(maturities, zero_rates, color='red', zorder=5, label='Given Data Points')
+plt.title('Comparison of Zero Curve Interpolation Methods')
+plt.xlabel('Maturity (Years)')
+plt.ylabel('Zero Rate (%)')
+plt.legend()
+plt.grid(True)
+plt.show()
