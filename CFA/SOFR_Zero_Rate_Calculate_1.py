@@ -45,3 +45,42 @@ data["DF"] = [float(sofr[_]) for _ in data["Termination"]]
 
 with pd.option_context("display.float_format", lambda x: '%.6f' % x):
     print(data)
+
+
+from datetime import datetime, timedelta
+from dateutil.relativedelta import relativedelta
+
+# Assuming dt is an alias for datetime for simplicity
+dt = datetime
+
+# Your start date
+start_date = dt(2024, 2, 8)
+
+# Define a function to add time based on your term format (e.g., "1W", "2M", "1Y")
+def add_time_to_date(start_date, term):
+    unit = term[-1]  # Last character (W, M, Y)
+    quantity = int(term[:-1])  # All but the last character
+    
+    if unit == "W":
+        return start_date + timedelta(weeks=quantity)
+    elif unit == "M":
+        return start_date + relativedelta(months=quantity)
+    elif unit == "Y":
+        return start_date + relativedelta(years=quantity)
+    else:
+        return None  # For unsupported units
+
+# Your terms
+terms = ["1W", "2W", "3W", "1M", "2M", "3M", "4M", "5M", "6M", "7M", "8M", "9M", "10M", "11M", "12M", "18M", "2Y", "3Y", "4Y", "5Y", "6Y", "7Y", "8Y", "9Y", "10Y", "12Y", "15Y", "20Y", "25Y", "30Y", "40Y", "50Y"]
+
+# Calculate dates for each term
+dates_for_terms = [add_time_to_date(start_date, term) for term in terms]
+
+# Example of how you might print these dates
+for term, date in zip(terms, dates_for_terms):
+    print(f"{term}: {date.strftime('%Y-%m-%d')}")
+
+# Now, assuming you have a method to get the zero rate for a given date, you would use these dates in that method.
+# For example:
+zero_rates = [sofr.shift(7).rate(date, "1d") for date in dates_for_terms]
+zero_rates
