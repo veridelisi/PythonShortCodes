@@ -1,4 +1,4 @@
-#Chaikin Volatility is a technical analysis indicator used to measure the volatility of a stock's price over time.
+#Choppiness Index
 def get_latest_price(ticker):
     """Get the latest price for the given ticker."""
     data = yf.Ticker(ticker)
