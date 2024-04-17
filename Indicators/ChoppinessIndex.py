@@ -1,4 +1,7 @@
 #Choppiness Index
+#A basic understanding of the indicator would be; higher values equal more choppiness, while lower values indicate directional trending.
+#https://www.tradingview.com/support/solutions/43000501980-choppiness-index-chop/
+
 def get_latest_price(ticker):
     """Get the latest price for the given ticker."""
     data = yf.Ticker(ticker)
