@@ -23,6 +23,7 @@ def download_file(url, save_path):
         print(f"Failed to download {url}. Status code: {response.status_code}")
 
 # Loop through years and months to generate URLs
+# Change THIS PART !
 for year in range(1915, 1920):  # From 1915 to 1919
     for month in range(1, 13):   # From January (1) to December (12)
         # Format the month and year into the filename
